@@ -15,6 +15,7 @@ public class FlightConfiguration {
 
   @Bean
   public FlightService flightService(){
+    System.out.println("flightService ====>> " + getClass());
     return new FlightService();
   }
 
